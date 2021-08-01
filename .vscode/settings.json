@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "Barsoom_SQL",
+            "password": "Uni67T3D01",
+            "username": "postgres",
+            "database": "titanicdb"
+        }
+    ]
+}
