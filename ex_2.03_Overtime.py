@@ -1,7 +1,7 @@
-rate = input("Rate of pay: ")
+hrs = input("Enter Hours: ")
+h=float(hrs)
+rate = input("Enter Pay Rate: ")
 r=float(rate)
-hours = input("Hours Worked: ")
-h=float(hours)
 if h <= 40:
     pay = r * h #calculate normal pay
 if h > 40:
