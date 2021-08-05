@@ -1,4 +1,4 @@
-def computepay(h,r):
+def computepay():
     h=float(hrs)
     r=float(rate)
     if h <= 40:
@@ -8,5 +8,5 @@ def computepay(h,r):
 
 hrs = input("Enter Hours:")
 rate=input("Enter Rate:")
-p = computepay(1,2)
+p = computepay()
 print("Pay", p)
