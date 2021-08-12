@@ -6,5 +6,6 @@ def str_counter():
     for letter in winp:
         if letter == linp:
             ct=ct+1
+    print(word)
     print("Total Letter Count:", ct)
 str_counter()
