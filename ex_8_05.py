@@ -1,5 +1,4 @@
-#practice ex_7_10
-fname=input('Enter File Name: ') #prompt for file name
+fname=input('Enter File Name: ') 
 try:
     fhand=open(fname)
 except: 
@@ -8,5 +7,7 @@ except:
 count = 0
 for line in fhand:
     if line.startswith('From:'):
+        words=line.split()
         count=count+1
-print('There were', count, 'subject lines in', fname)
+        print(words[1])
+print("There were", count, "lines in the file with From as the first word")
