@@ -1,3 +1,4 @@
+#compute average, max, min, sum using a list with user input
 numlist=list()
 while True:
     inp=input('Enter a number: ', )
