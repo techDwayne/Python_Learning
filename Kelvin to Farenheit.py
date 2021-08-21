@@ -6,5 +6,5 @@ def keltofah(k):  #function to convert Kelvin to Farenheit
 print('Enter Temperature in Kelvin: ')
 kel=float(input())
 farenheit=keltofah(kel)
-print('\n Equivalent Temperature in Farenheit = {:0f}'.format(farenheit))
+print('\n Equivalent Temperature in Farenheit = {:2f}'.format(farenheit))
 
