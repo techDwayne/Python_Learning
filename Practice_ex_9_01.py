@@ -13,4 +13,3 @@ if 'computer' in words_list:
     print('True')
 else:
     print('False')
-print(words_list)
