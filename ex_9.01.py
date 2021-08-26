@@ -1,15 +1,20 @@
-#practice_ex_9.03.py
-name=input('Enter File Name: ')
-handle=open(name)
+fname=input('Enter File Name: ')
+try:
+    fhand=open(fname)
+except: 
+    print("File cannot be found.", fname)
+    exit()
 counts=dict()
-for line in  handle:
-    words=line.split()
-    for word in words[]:
-        counts[word] = counts.get(word,0)+1
+for line in fhand:
+    if line.startswith('From '):
+        words=line.split()
+        counts[words[1]] = counts.get(words[1], 0)+1
 bigcount=None
-bigword=None
-for word, count in counts.items():
-    if bigcount is None or count > bigcount:
-        bigword=word
-        bigcount=count
-print(bigword, bigcount) 
+bigmail=None
+
+for count in counts:
+    if bigcount is None:  bigcount=counts[count]
+    if bigcount < counts[count]:
+        bigcount=counts[count]
+        bigmail = count
+print(bigmail, bigcount) 

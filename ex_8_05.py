@@ -6,7 +6,7 @@ except:
     exit()
 count = 0
 for line in fhand:
-    if line.startswith('From:'):
+    if line.startswith('From: '):
         words=line.split()
         count=count+1
         print(words[1])
