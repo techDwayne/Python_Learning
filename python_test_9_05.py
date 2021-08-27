@@ -12,9 +12,8 @@ counts = dict()
 for line in fhand:
     if  not line.startswith('From '): continue
     line = line.rstrip()
-    line = line.translate(line.maketrans('', '', string.punctuation))
-    line = line.lower()
-    words = line.split()
+    line=line.split('@')[1]
+    words = line
     for word in words:
         counts[word[1]] = 1
      
