@@ -7,7 +7,7 @@ def ifConfusion(x,y):
             else:
                 return "B"
         elif x+y>0:
-            while X>y:
+            while x>y:
                 x=x-1
             while y>x:
                 y=y-1
