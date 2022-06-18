@@ -10,5 +10,6 @@
             "username": "postgres",
             "database": "titanicdb"
         }
-    ]
+    ],
+    "python.pythonPath": "C:\\Users\\dsudds1963\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe"
 }
