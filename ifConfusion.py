@@ -30,4 +30,6 @@ def ifConfusion(x,y):
                 return "D"
         else:
             return "H"
-print(ifConfusion(1,5))
+x=input("Input first value between 0 and 9.")
+y=input("Input second value between 0 and 9.")
+print (ifConfusion((x,y))
