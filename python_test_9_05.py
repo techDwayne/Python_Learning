@@ -15,7 +15,7 @@ for line in fhand:
     line=line.split('@')[1]
     words = line
     for word in words:
-        counts[word[1]] = 1
+        counts[words[1]] = 1
      
 print(counts)
 
