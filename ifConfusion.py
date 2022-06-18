@@ -30,4 +30,4 @@ def ifConfusion(x,y):
                 return "D"
         else:
             return "H"
-print(ifConfusion(6,4))
+print(ifConfusion(1,5))
