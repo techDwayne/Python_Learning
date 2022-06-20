@@ -32,4 +32,4 @@ def ifConfusion(x,y):
             return "H"
 x=input("Input first value between 0 and 9.")
 y=input("Input second value between 0 and 9.")
-print (ifConfusion((x,y))
+print (ifConfusion((x,y)))
