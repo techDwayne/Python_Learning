@@ -37,3 +37,13 @@ print(rev_edutainers)
 edutainers.reverse() #--mutated, the list is reversed in place and will be reversed from this point forward. 
 print(edutainers)
 print(edutainers[2])
+
+breakit=['1', 'blue','seven', 5,3,4, 'orange', 'team', 8 ]
+print(breakit)
+#des_breakit=sorted(breakit, reverse=True)--will not work, TypeError, list not comparable
+print(breakit)
+rev_breakit=list(reversed(breakit))
+print(rev_breakit) #works
+#srt_breakit=sorted(breakit)--also does not work, TypeError, list not comparable 
+
+
