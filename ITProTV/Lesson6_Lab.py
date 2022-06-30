@@ -18,10 +18,10 @@ Student_list.append('Mark')
 print("The updated list with a new student added is: ", Student_list)
 #To search for a student name in the list
 IndexNumber1 = Student_list.index("Kathy")
-print(IndexNumber1)
+print('Index for Kathy in the whole list is: ', IndexNumber1)
 #To delete a student name in the list from a specific index
 del Student_list[2]
-print("The final list after deleting Kathy is: ", Student_list)
+print("The final student list after deleting Kathy is: ", Student_list)
 #To sort the list in ascending order
 Student_list.sort()
 #To print the sorted list in ascending order
@@ -34,4 +34,6 @@ print('The sorted list in descending order is: ', Student_list)
 Student_list.reverse()
 #To print the reversed list
 print('The reverse list is: ', Student_list)
+
+
 
