@@ -38,5 +38,14 @@ print('The reverse list is: ', Student_list)
 print('The first two list items are: ', Student_list[0:2])
 #To slice and print the middle items of the list
 print('The middle items of the list are: ', Student_list[1:3])
+#To slice and print the last two items of the list
+print('The last two items of the list are: ', Student_list[2:4])
+# To modify the list
+Student_list[2:4]=['Nathan', 'Jim']
+print('The list with the modified items is: ', Student_list)
+print('The list with a negative index number of -1 is: ', Student_list[-1])
+Student_list.append('Kayla')
+print(Student_list)
+
 
 
