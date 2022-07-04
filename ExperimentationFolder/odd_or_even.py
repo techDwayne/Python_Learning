@@ -1,4 +1,4 @@
-#odd or even
+#Equally Divided
 
 x = int(input('Number: '))
 if (x%2)==0:
