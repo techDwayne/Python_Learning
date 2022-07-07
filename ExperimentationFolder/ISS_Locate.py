@@ -1,6 +1,6 @@
 import pandas as pd
 import plotly.express as px
-#code
+#code: url to api, pandas dataframe, plot location
 url = 'http://api.open-notify.org/iss-now.json'
 df = pd.read_json(url)
 df['latitude']= df.loc['latitude','iss_position']
