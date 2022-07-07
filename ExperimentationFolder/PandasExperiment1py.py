@@ -17,4 +17,6 @@ df2=pd.DataFrame(
 print(df2)
 print(df.head())
 print(df.tail())
-
+df.to_csv("foo.csv")
+fd=pd.read_csv("foo.csv")
+print(fd)
