@@ -1,4 +1,5 @@
 import plotly.express as px
+#code for fun 
 gapminder_df=px.data.gapminder()
 px.scatter(data_frame=gapminder_df,
         x='gdpPercap',
