@@ -13,4 +13,5 @@ px.scatter(data_frame=gapminder_df,
            hover_name='country',
            animation_frame='year',
            height=600,
-           size_max=100)
+           size_max=100
+           )
