@@ -1,6 +1,5 @@
 
 fname=input('Enter file name: \n')
-
 list=open(fname)
 number_of_characters = 0
 for line in list:
