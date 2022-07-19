@@ -1,15 +1,4 @@
 {
-    "sqltools.connections": [
-        {
-            "previewLimit": 50,
-            "server": "localhost",
-            "port": 5432,
-            "driver": "PostgreSQL",
-            "name": "Barsoom_SQL",
-            "password": "Uni67T3D01",
-            "username": "postgres",
-            "database": "titanicdb"
-        }
-    ],
+    "sqltools.connections": [],
     "python.pythonPath": "C:\\Users\\dsudds1963\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe"
 }
