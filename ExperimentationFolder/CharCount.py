@@ -10,4 +10,4 @@ for line in list:
     line=line.strip('\n')#strips newline char
     words=line.split()
     number_of_characters+=len(line)
-print('Characters: ', number_of_characters)
+print('\n Characters: ', number_of_characters)
