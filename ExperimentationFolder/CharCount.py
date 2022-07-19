@@ -1,8 +1,7 @@
 
-
-path='/GitHub/Python_Learning/ExperimentationFolder'
+path= '/GitHub/Python_Learning/ExperimentationFolder'
 fname=input('Enter file name: \n')
-list=open(f"{path}/{fname}")
+list=open(f'{path}/{fname}')
 number_of_characters = 0
 for line in list:
     line=line.strip('\n')
