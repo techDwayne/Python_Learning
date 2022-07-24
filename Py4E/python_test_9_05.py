@@ -10,12 +10,12 @@ except:
 
 counts = dict()
 for line in fhand:
-    if  not line.startswith('From '): continue
-    line = line.rstrip()
-    line=line.split('@')[1]
-    words = line
-    for word in words:
-        counts[words[1]] = 1
-     
+    if line.startswith('From '): 
+        line = line.split()
+        email=line[1]
+        email=email.split('@')
+        domain=email[1]
+        print(domain)
+        counts[domain]=counts.get(domain,0)+1
 print(counts)
 
