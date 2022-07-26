@@ -9,5 +9,5 @@ for line in fh:
         else:
                 tot = tot + float(line[20:])
                 count = count + 1
-
 print("Average spam confidence:", tot/count)
+ 
