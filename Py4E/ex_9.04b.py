@@ -10,7 +10,7 @@ for line in fhand:
         emails[domain] = emails.get(domain,0)+1
 print(emails)
 
-#loop through the dictionary using a maximum loop to find the largest contributor
+#loop through the dictionary using a maximum loop to find the most emails from any domain
 largest = None
 largest_domain = None
 

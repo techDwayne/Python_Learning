@@ -9,26 +9,27 @@ except:
     exit()
     
 #Create the dictionary
-counts = dict()
+emails = dict()
 for line in fhand:
     if line.startswith('From '): 
         line = line.split()
         email=line[1]
+        
         #email=email.split('@')
         #print(email)
         #domain=email[1]
-        domain=email
-        counts[domain]=counts.get(domain,0)+1
-#print(counts)
+        #domain=email
+        emails[email]=emails.get(email,0)+1
+print(emails)
 
 #loop through the dictionary using a maximum loop to find the largest contributor
 largest = None
 largest_author = None
 
-for key in counts:
-    if largest is None: largest = counts[key]
-    if largest < counts[key]:
-        largest = counts[key]
+for key in emails:
+    if largest is None: largest = emails[key]
+    if largest < emails[key]:
+        largest = emails[key]
         largest_author=key
         
 print(largest_author,largest)
