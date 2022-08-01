@@ -22,9 +22,10 @@ largest = None
 largest_domain = None
 
 for key in emails:
+    print(emails)
     if largest is None: largest = emails[key]
     if largest < emails[key]:
         largest = emails[key]
-        largest_domain=key
-        
+        largest_domain=key  
+print(key)        
 print(largest_domain,largest)
