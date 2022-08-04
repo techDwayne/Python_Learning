@@ -18,11 +18,13 @@ with open(myArg,'r') as fhand:
 #print(emails)
 
 #loop through the dictionary using a maximum loop to find the largest contributor
+
 largest = None
 largest_author = None
 
 for key in emails:
     if largest is None: largest = emails[key]
+    
     if largest < emails[key]:
         largest = emails[key]
         largest_author=key
