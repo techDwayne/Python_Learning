@@ -12,17 +12,18 @@ with open(myArg,'r') as fhand:
         if line.startswith('From '):
             line=line.split()
             email=line[1]
+            print(email)
             email=email.split('@')
             domain=email[1]
             emails[domain] = emails.get(domain,0)+1
-print(emails)
+#print(emails)
 
 #loop through the dictionary using a maximum loop to find the most emails from any domain
 largest = None
 largest_domain = None
 
 for key in emails:
-    print(emails)
+    #print(emails)
     if largest is None: largest = emails[key]
     if largest < emails[key]:
         largest = emails[key]

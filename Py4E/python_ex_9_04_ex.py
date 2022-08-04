@@ -15,7 +15,7 @@ with open(myArg,'r') as fhand:
             line = line.split()
             email=line[1]
             emails[email]=emails.get(email,0)+1
-print(emails)
+#print(emails)
 
 #loop through the dictionary using a maximum loop to find the largest contributor
 largest = None
