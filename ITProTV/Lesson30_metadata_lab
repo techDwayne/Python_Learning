@@ -1,0 +1,9 @@
+#Print the metadata of Datetimemodule.py file
+import os
+import time
+mode, ino, dev, nlink, uid, gid, size, atime, mtime, ctime = os.stat("sample.txt")
+print("The file was created at:",time.ctime(ctime))
+print("The file was last accessed at:",time.ctime(atime))
+print("The file was last modified at:",time.ctime(mtime))
+print("The inode/device number is:",ino,dev)
+print("The file size is:",size)

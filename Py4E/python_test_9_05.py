@@ -13,10 +13,10 @@ for line in fhand:
     if line.startswith('From '): 
         line = line.split()
         email=line[1]
-        #email=email.split('@')
+        email=email.split('@')
         print(email)
-        #domain=email[1]
-        domain=email
+        domain=email[1]
+        print(domain)
         counts[domain]=counts.get(domain,0)+1
 print(counts)
 

@@ -4,6 +4,7 @@ linp=input("Input a letter in the word ")
 def str_counter():
     ct = 0
     for letter in winp:
+        print(letter)
         if letter == linp:
             ct=ct+1
     print(winp)
