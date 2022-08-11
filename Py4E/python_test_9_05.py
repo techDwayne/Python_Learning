@@ -14,9 +14,9 @@ for line in fhand:
         line = line.split()
         email=line[1]
         email=email.split('@')
-        print(email)
+        #print(email)
         domain=email[1]
-        print(domain)
+        #print(domain)
         counts[domain]=counts.get(domain,0)+1
 print(counts)
 
