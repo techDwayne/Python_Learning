@@ -14,7 +14,7 @@ for line in fhand:#loops through the file
         time=line[5] #split out the time in each line
         hms=time.split(':') #split time at each :      
         hour=hms[0]#split out the hour 
-        counts[hour]=counts.get(hour,0)+1#add the hour and the count to the dictionary
+        counts[hour]=counts.get(hour,0)+1#add the hour and the count to the dictionary and create histogram
 lst=list() #create list from histogram
 for key, val in counts.items(): #loop through list
     newtup = (key, val) #create tuple 
