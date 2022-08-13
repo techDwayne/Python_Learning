@@ -10,14 +10,14 @@ except:
 counts = dict()
 for line in fhand:#loops through the file
     if line.startswith('From '): #find each FROM line
-        line = line.split() #split the line
-        time=line[5] #split out the time in each line
-        hms=time.split(':') #split time at each :      
+        line = line.split() #split the line into a list
+        time=line[5] #split out the timestamp in each line
+        hms=time.split(':') #split timestamp at each :      
         hour=hms[0]#split out the hour 
         counts[hour]=counts.get(hour,0)+1#add the hour and the count to the dictionary and create histogram
 lst=list() #create list from histogram
 for key, val in counts.items(): #loop through list
-    newtup = (key, val) #create tuple 
+    newtup = (key, val) #create tuple
     lst.append(newtup)#append the list with each tuple
 lst=sorted(lst)#sort the list
 for val,key in lst: #loop through the sorted list
