@@ -10,7 +10,7 @@ except:
 counts = dict()
 for line in fhand:
     if line.startswith('From '): 
-        line = line.split()
+        line = line.split() #splits line into a list
         email=line[1]
         counts[email]=counts.get(email,0)+1
 #print(counts)
