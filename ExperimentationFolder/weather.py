@@ -29,7 +29,4 @@ therm_read=today['temperature']
 print(therm_read)
 print(text)
 
-#get alerts
-url=f'https://api.weather.gov/alerts/active?area=AK'
-alerts= requests.get(url)
-alerts = alerts.json()
+
