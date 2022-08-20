@@ -13,20 +13,21 @@ prop = station['properties']
 grid_id = prop['gridId']
 grid_x = prop['gridX']
 grid_y = prop['gridY']
+json.dumps(station)
 
 
 # get the forecast
 url = f'https://api.weather.gov/gridpoints' \
       f'/{grid_id}/{grid_x},{grid_y}/forecast/hourly'
-forecast = requests.get(url)
-forecast = forecast.json()
+fcast = requests.get(url)
+fcast = fcast.json()
 
 
-today = forecast['properties']['periods'][0]
-text = today['shortForecast']
-therm_read=today['temperature']
+tdy = fcast['properties']['periods'][0]
+txt = tdy['shortForecast']
+temp_read=tdy['temperature']
 
-print(therm_read)
-print(text)
+print(temp_read)
+print(txt)
 
 
