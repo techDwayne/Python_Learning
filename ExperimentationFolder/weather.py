@@ -21,13 +21,17 @@ url = f'https://api.weather.gov/gridpoints' \
 forecast = requests.get(url)
 forecast = forecast.json()
 
-today = forecast['properties']['periods'][0]
-text = today['shortForecast']
+#print(json.dumps(forecast, indent=4))
 
-#print(today)
-print(json.dumps(forecast, indent=4))
-print(json.dumps(text,indent=4))
+time = forecast['properties']['periods'][0]["startTime"]
+temp = forecast['properties']['periods'][0]['temperature']
+wndspd = forecast['properties']['periods'][0]['windSpeed']
+shrtFore = forecast['properties']['periods'][0]['shortForecast']
 
+print(time)
+print(temp)
+print(wndspd)
+print(shrtFore)
 
 
 
