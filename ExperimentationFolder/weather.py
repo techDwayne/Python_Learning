@@ -18,15 +18,15 @@ grid_y = prop['gridY']
 # get the forecast
 url = f'https://api.weather.gov/gridpoints' \
       f'/{grid_id}/{grid_x},{grid_y}/forecast/hourly'
-forecast = requests.get(url)
-forecast = forecast.json()
+fcast = requests.get(url)
+fcast = fcast.json()
 
-#print(json.dumps(forecast, indent=4))
+print(json.dumps(fcast, indent=4))
 
-time = forecast['properties']['periods'][0]["startTime"]
-temp = forecast['properties']['periods'][0]['temperature']
-wndspd = forecast['properties']['periods'][0]['windSpeed']
-shrtFore = forecast['properties']['periods'][0]['shortForecast']
+time = fcast['properties']['periods'][0]["startTime"]
+temp = fcast['properties']['periods'][0]['temperature']
+wndspd = fcast['properties']['periods'][0]['windSpeed']
+shrtFore = fcast['properties']['periods'][0]['shortForecast']
 
 print(time)
 print(temp)
