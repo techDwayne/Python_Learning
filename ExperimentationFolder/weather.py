@@ -5,6 +5,7 @@ import json
 LAT = 40.09768
 LNG = -76.72323
 
+
 # get station and grid ids
 url = f'https://api.weather.gov/points/{LAT},{LNG}'
 station = requests.get(url)
@@ -14,22 +15,23 @@ grid_id = prop['gridId']
 grid_x = prop['gridX']
 grid_y = prop['gridY']
 
-
-
 # get the forecast
 url = f'https://api.weather.gov/gridpoints' \
       f'/{grid_id}/{grid_x},{grid_y}/forecast/hourly'
-fcast = requests.get(url)
+forecast = requests.get(url)
+forecast = forecast.json()
+
+today = forecast['properties']['periods'][0]
+text = today['shortForecast']
+
+#print(today)
+print(json.dumps(forecast, indent=4))
+print(json.dumps(text,indent=4))
 
 
-#tdy = fcast['properties']['periods'][0]
-#txt = tdy['shortForecast']
-#temp_read=tdy['temperature']
 
-#print(temp_read)
-#print(txt)
 
-fcast.raise_for_status()
-fcast_data=json.loads(fcast.text)
-weather=fcast_data['list']
-print(weather)
+
+
+
+
