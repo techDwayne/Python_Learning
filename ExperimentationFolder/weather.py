@@ -23,7 +23,7 @@ grid_id = prop['gridId']
 grid_x = prop['gridX']
 grid_y = prop['gridY']
 
-# get the forecast
+# get the forecast from the station
 url = f'https://api.weather.gov/gridpoints' \
       f'/{grid_id}/{grid_x},{grid_y}/forecast/hourly'
 fcast = requests.get(url)
@@ -36,10 +36,11 @@ fcast = fcast.json()
 with open('fcast.json', 'w') as f:
       json.dump(fcast, f)
 
-#get objects from json
+#how many hours to display
 hours = input("Number of hours of forecast? ")
 hrs=int(hours)
 #print(hrs)
+#loop through forecast, extract and print time, temp, windspd and short forcast for each hour
 for i in range(0,hrs):
       time = fcast['properties']['periods'][i]["startTime"]
       temp = fcast['properties']['periods'][i]['temperature']
