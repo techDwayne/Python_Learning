@@ -1,6 +1,6 @@
 def percentage_liked(ratings):
     list_liked = [i>=4 for i in ratings]
-    print(sum(percentage_liked[4:8]))/(sum(list_liked))
+    percentage_liked=(sum(percentage_liked[4:8]))/(sum(list_liked))
     # TODO: Complete the function
     return percentage_liked
 
