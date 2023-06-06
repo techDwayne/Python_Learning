@@ -17,5 +17,5 @@ def test_ssl_certificates(json_file):
         issued_by = issuer['commonName']
         print(f"Certificate for {issued_to} issued by {issued_by} is valid.")
 
-json_file = '/urls.json'
+json_file = 'urls.json'
 test_ssl_certificates(json_file)
