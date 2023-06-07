@@ -1,4 +1,5 @@
-[
+{
+    "urls": [
 "https://admincenter.onlineaccounts.org",
 "https://alsstage.onlineaccounts.org",
 "https://arrowheadcuestatements.onlineaccounts.org",
@@ -38,5 +39,5 @@
 "https://wsstageadmin.onlineaccounts.org",
 "https://mobile-americhoicefcu2050pa.onlineaccounts.org",
 "https://www.onlineaccounts.org"
-
-]
+    ]
+}
