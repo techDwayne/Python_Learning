@@ -1,7 +1,7 @@
 # Write a function called is_ten that takes one parameter called x. The function must return True if x is 10 and False otherwise.
 
-def is_ten(x):
-    if x == 10:
+def is_nine(x):
+    if x == 9:
         return True
     else:
         return False
