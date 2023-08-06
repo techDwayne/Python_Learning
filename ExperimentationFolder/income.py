@@ -7,7 +7,7 @@ def income_growth(monthly_income):
     # Initialize a variable to store the total income
     total_income = annual_income
     # Loop for x years
-    for i in range(15):
+    for i in range(8):
         # Increase the annual income by 3 percent
         annual_income = annual_income * 1.03
         # Round the annual income to two decimal places
